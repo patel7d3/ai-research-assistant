@@ -28,8 +28,6 @@ import torch
 import requests
 from bs4 import BeautifulSoup
 import arxiv
-import scholarly
-from scholarly import scholarly as sch
 import streamlit as st
 from pathlib import Path
 import pickle
