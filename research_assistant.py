@@ -20,10 +20,6 @@ from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
 from langchain.schema import Document
 
-# Hugging Face
-from transformers import pipeline, AutoTokenizer, AutoModel
-import torch
-
 # Additional utilities
 import requests
 from bs4 import BeautifulSoup
