@@ -1,0 +1,11 @@
+# Essential packages only - install in order
+setuptools>=65.0.0
+wheel>=0.38.0
+numpy>=1.21.0
+langchain>=0.1.0
+openai>=1.0.0
+streamlit>=1.28.0
+python-dotenv>=0.19.0
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+pandas>=1.5.0
