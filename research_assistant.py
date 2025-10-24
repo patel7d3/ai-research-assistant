@@ -17,7 +17,7 @@ from langchain_community.document_loaders import PyPDFLoader, WebBaseLoader
 from langchain_community.vectorstores import FAISS
 
 
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain_core.documents import Document  # safer for langchain==1.x
 
 import requests
