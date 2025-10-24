@@ -14,7 +14,6 @@ from langchain_openai import OpenAI, OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader, WebBaseLoader
 from langchain_community.vectorstores import FAISS
-from langchain.chains import RetrievalQA
 from langchain.agents import Tool, AgentExecutor, initialize_agent, AgentType
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
