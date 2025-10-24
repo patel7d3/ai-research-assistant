@@ -16,7 +16,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader, WebBaseLoader
 from langchain_community.vectorstores import FAISS
 
-from langchain.memory import ConversationBufferMemory
+
 from langchain.prompts import PromptTemplate
 from langchain_core.documents import Document  # safer for langchain==1.x
 
@@ -312,8 +312,9 @@ class MultiAgentResearchAssistant:
         self.web_agent = WebSearchAgent()
         self.synthesis_agent = SynthesisAgent(self.llm)
 
-        # Chat memory (not deeply used yet, but fine to keep)
-        self.memory = ConversationBufferMemory(memory_key="chat_history")
+        # simple in-memory chat log we can extend later if we want
+        # e.g. self.chat_history.append({"user": "...", "assistant": "..."})
+        self.chat_history: list[dict[str, str]] = []
 
         # Try to load any saved FAISS index
         self.vector_db.load_index()
