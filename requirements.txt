@@ -13,3 +13,4 @@ arxiv
 PyPDF2
 tiktoken
 langchain-text-splitters
+langchain-core
